@@ -14,7 +14,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 MODEL_DIR = os.path.join(HERE, "model")
 SAMPLE_CSV = os.path.join(HERE, "test_data.csv")
 
-st.set_page_config(page_title="Tumour Classifier Lab", page_icon="🔬", layout="wide")
+st.set_page_config(page_title="Tumour Classification", layout="wide")
 
 
 @st.cache_resource
