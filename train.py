@@ -2,7 +2,7 @@
 the Streamlit app needs (models, test_data.csv, metrics summary).
 
 Usage:
-    python train.py                                   # expects breast_cancer_data/wdbc.data
+    python train.py       # expects breast_cancer_data/wdbc.data
     python train.py --data path/to/wdbc.data
 """
 import argparse
