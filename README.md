@@ -88,10 +88,9 @@ The following preprocessing steps are performed:
 
 
 ## c. GitHub repository
-<!-- paste your link -->
-https://github.com/<your-username>/<your-repo>
+GitHub Link : https://github.com/Janeni-03/ml-assignment
 
-Live app: https://<your-app>.streamlit.app
+Live app: [https://<your-app>.streamlit.app](https://ml-assignment-d45dbx9guboehjjwz3p7ha.streamlit.app/)
 
 
 ## d. Models Used
