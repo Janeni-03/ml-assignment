@@ -125,4 +125,23 @@ Evaluated on the 114-row held-out test set (positive class = malignant).
 | **Naive Bayes** | Achieves perfect precision (no false positives) and a high AUC (0.993), but its recall is only 0.833, meaning it misses 7 malignant cases. The independence assumption is unrealistic because features such as radius, perimeter and area are strongly correlated, which may make its predictions overconfident. |
 | **Support Vector Machine** | Best overall performance, achieving the highest accuracy (97.4%), F1-score (0.963) and MCC (0.944). It produces no false positives and misses only 3 malignant cases. The RBF kernel with scaled features fits the decision boundary between the classes effectively. |
 | **Overall Winner for Your Dataset** | **Support Vector Machine (SVM)** is the overall winner, achieving the best accuracy (0.9737), F1-score (0.9630) and MCC (0.9442). Logistic Regression is a close second, achieving the highest AUC (0.9960). Since missing a malignant tumour is particularly costly, recall is important. Both SVM and Logistic Regression achieve the highest recall of 0.9286. Therefore, SVM is selected as the best-performing model, while Logistic Regression remains a strong alternative due to its simplicity and interpretability. |
+
+## Project structure
+
+```
+├── app.py              Streamlit app
+├── train.py            trains and saves the five models, writes test_data.csv
+├── utils.py            shared metric helpers
+├── requirements.txt    Python dependencies
+├── test_data.csv       held-out test rows (features + target)
+└── model/              saved .joblib models, metrics_summary.csv, results_table.md
+```
+
+## Run locally
+
+```bash
+pip install -r requirements.txt
+python train.py --data breast_cancer_data/wdbc.data
+streamlit run app.py
+```
 ```
